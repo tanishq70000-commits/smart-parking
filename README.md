@@ -1,38 +1,57 @@
-# SmartParking - Automated Parking Management System
+# SmartParking 🚗
 
-## 🚀 Live Application
-**Access URL**: http://13.233.151.155
+A Smart Parking Management System built with Django.
 
-## ✅ CI/CD Status
-- **GitHub Actions**: Automated deployment on every push to main branch
-- **Docker Hub**: satyampr01/smartparking
-- **Deployment**: EC2 (Amazon Linux, 13.233.151.155)
+## Deployment Status
 
-## 📋 Features
-- Automated parking entry/exit management
-- PDF bill generation
-- Dashboard for monitoring
-- Dockerized deployment
+- ✅ Deployed on EC2: `http://98.80.140.183`
+- ✅ CI/CD Pipeline: GitHub Actions + Docker Hub
+- ✅ Containerized: Docker + Docker Compose
 
-## 🔧 Tech Stack
+## Quick Start
+
+### Local Development
+```bash
+# Clone the repository
+git clone https://github.com/tanishq70000-commits/smart-parking.git
+cd smart-parking
+
+# Copy environment file
+cp .env.example .env
+
+# Run with Docker Compose
+docker-compose up -d
+
+# Apply migrations
+docker-compose exec web python manage.py migrate
+
+# Access at http://localhost:80
+```
+
+### Production Deployment
+
+The application is automatically deployed to EC2 when you push to the `main` branch.
+
+## Features
+
+- Smart parking slot management
+- Automated billing system
+- PDF receipt generation
+- User-friendly interface
+
+## Tech Stack
+
 - **Backend**: Django 4.2.20
-- **Server**: Gunicorn + Nginx
-- **Database**: SQLite
-- **Containerization**: Docker + Docker Compose
+- **Web Server**: Nginx + Gunicorn
+- **Database**: SQLite (development) / PostgreSQL ready
+- **Containerization**: Docker, Docker Compose
 - **CI/CD**: GitHub Actions
+- **Deployment**: AWS EC2
 
-## 🚀 Deployment
-Every push to the `main` branch automatically triggers:
-1. Build Docker image
-2. Push to Docker Hub
-3. Deploy to EC2
-4. Run migrations
-5. Restart services
+## Contributing
 
-## 📊 Monitoring
-Check deployment status: https://github.com/satyam-prakash/smartparking/actions
+Push your changes to the `main` branch to trigger automatic deployment.
 
 ---
 
-**Last Updated**: December 24, 2025
-**Status**: ✅ Deployed and Running
+Last Updated: 2025-12-24
