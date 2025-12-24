@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartParking - Redirect</title>
+    <meta http-equiv="refresh" content="0; url=http://13.233.151.155">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { margin-bottom: 20px; }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            background: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        a:hover { background: #f1f1f1; }
+        .info {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 SmartParking App</h1>
+        <p>Redirecting to your deployed application...</p>
+        <p><strong>If not redirected, click below:</strong></p>
+        <a href="http://13.233.151.155" target="_blank">Open SmartParking App</a>
+        
+        <div class="info">
+            <p>✅ CI/CD Pipeline: Active</p>
+            <p>✅ Deployment: EC2 (13.233.151.155)</p>
+            <p>✅ Status: Running</p>
+        </div>
+        
+        <div style="margin-top: 20px; font-size: 12px;">
+            <p>Alternative access methods:</p>
+            <p>1. Try in Incognito/Private mode</p>
+            <p>2. Disable corporate proxy temporarily</p>
+            <p>3. Use mobile hotspot</p>
+        </div>
+    </div>
+    
+    <script>
+        // Force redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = 'http://13.233.151.155';
+        }, 2000);
+    </script>
+</body>
+</html>
